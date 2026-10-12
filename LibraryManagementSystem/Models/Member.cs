@@ -17,4 +17,16 @@ public class Member
             field = value;
         }
     }
+    public DateTime RegistrationDate
+    {
+        get { return field; }
+        set
+        {
+            if (value > DateTime.Now)
+            {
+                throw new ArgumentException("Registration date cannot be in the future.");
+            }
+            field = value;
+        }
+    }
 }
