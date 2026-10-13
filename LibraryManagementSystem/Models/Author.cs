@@ -17,4 +17,5 @@ public class Author
         }
     }
     public string Country { get; set; }
+    public List<Book> Books { get; set; } = new List<Book>();
 }

@@ -22,4 +22,5 @@ public class Book
     public Author Author { get; set; }
     public int CategoryId { get; set; }
     public Category Category { get; set; }
+    public List<Borrowing> Borrowings { get; set; } = new List<Borrowing>();
 }

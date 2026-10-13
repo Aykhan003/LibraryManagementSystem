@@ -29,4 +29,5 @@ public class Member
             field = value;
         }
     }
+    public List<Borrowing> Borrowings { get; set; } = new List<Borrowing>();
 }
